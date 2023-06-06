@@ -29,6 +29,7 @@ mediatek_setup_interfaces()
 	mediatek,mt7988a-dsa-10g-spim-snand)
 		ucidef_set_interfaces_lan_wan "lan0 lan1 lan2 lan3" "eth1 eth2"
 		;;
+	komi,a31 |\
 	qihoo,360t7)
 		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3" wan
 		;;
@@ -71,6 +72,7 @@ mediatek_setup_macs()
 		wan_mac=$(macaddr_add "$lan_mac" 1)
 		label_mac=$wan_mac
 		;;
+		
 	xiaomi,redmi-router-ax6000-stock|\
 	xiaomi,redmi-router-ax6000-ubootmod)
 		wan_mac=$(mtd_get_mac_ascii Bdata ethaddr_wan)
