@@ -188,6 +188,18 @@ define U-Boot/mt7981_qihoo_360t7
   DEPENDS:=+trusted-firmware-a-mt7981-spim-nand-ddr3
 endef
 
+define U-Boot/mt7981_komi_a31
+  NAME:=KOMI A31
+  BUILD_SUBTARGET:=filogic
+  BUILD_DEVICES:=komi_a31
+  UBOOT_CONFIG:=mt7981_komi-a31
+  UBOOT_IMAGE:=u-boot.fip
+  BL2_BOOTDEV:=spim-nand
+  BL2_SOC:=mt7981
+  BL2_DDRTYPE:=ddr3
+  DEPENDS:=+trusted-firmware-a-mt7981-spim-nand-ddr3
+endef
+
 define U-Boot/mt7986_rfb
   NAME:=MT7986 Reference Board
   BUILD_SUBTARGET:=filogic
