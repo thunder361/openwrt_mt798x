@@ -326,6 +326,7 @@ UBOOT_TARGETS := \
 	ravpower_rp-wd009 \
 	mt7629_rfb \
 	mt7981_qihoo_360t7 \
+	mt7981_komi_a31 \
 	mt7986_bananapi_bpi-r3-emmc \
 	mt7986_bananapi_bpi-r3-sdmmc \
 	mt7986_bananapi_bpi-r3-snand \
