@@ -279,10 +279,7 @@ define Device/komi_a31
 		     mkf2fs e2fsprogs blkid blockdev losetup kmod-fs-ext4 \
 		     kmod-mmc kmod-fs-f2fs kmod-fs-vfat kmod-nls-cp437 \
 		     kmod-nls-iso8859-1 mmc-utils fdisk gdisk partx-utils tune2fs uboot-envtools
-  ARTIFACTS := preloader.bin bl31-uboot.fip
-  ARTIFACT/preloader.bin := mt7981-bl2 spim-nand-ddr3
-  ARTIFACT/bl31-uboot.fip := mt7981-bl31-uboot komi_a31
-endef
+ndef
 TARGET_DEVICES += komi_a31
 
 define Device/tplink_tl-xdr-common
