@@ -279,7 +279,7 @@ define Device/komi_a31
 		     mkf2fs e2fsprogs blkid blockdev losetup kmod-fs-ext4 \
 		     kmod-mmc kmod-fs-f2fs kmod-fs-vfat kmod-nls-cp437 \
 		     kmod-nls-iso8859-1 mmc-utils fdisk gdisk partx-utils tune2fs uboot-envtools
-ndef
+endef
 TARGET_DEVICES += komi_a31
 
 define Device/tplink_tl-xdr-common
