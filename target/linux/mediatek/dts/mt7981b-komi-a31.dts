@@ -208,7 +208,6 @@
 			mediatek,pull-up-adv = <0>; /* bias-disable */
 		};
 	};
-};
 
 	mmc0_pins_default: mmc0-pins-default {
 		mux {
